@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OrionShield — Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07070f;--bg2:#0d0d1c;--purple:#6C63FF;--cyan:#22D3EE;--text:#e8e6ff;--muted:#6b6b9a;--border:rgba(108,99,255,0.18)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.7}
+.ambient{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);animation:drift ease-in-out infinite alternate}
+.orb1{width:400px;height:400px;background:#6C63FF;opacity:0.1;top:-80px;left:-80px;animation-duration:12s}
+.orb2{width:300px;height:300px;background:#22D3EE;opacity:0.07;bottom:100px;right:-60px;animation-duration:9s;animation-delay:-4s}
+@keyframes drift{from{transform:translate(0,0)}to{transform:translate(24px,32px)}}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 48px;display:flex;align-items:center;justify-content:space-between;background:rgba(7,7,15,0.8);backdrop-filter:blur(20px);border-bottom:0.5px solid var(--border)}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-icon{width:30px;height:30px;border-radius:8px;background:linear-gradient(135deg,var(--purple),var(--cyan));display:flex;align-items:center;justify-content:center;font-size:14px}
+.nav-name{font-family:'Syne',sans-serif;font-size:16px;font-weight:700;background:linear-gradient(90deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-back{font-size:13px;color:var(--muted);text-decoration:none;transition:color .2s}
+.nav-back:hover{color:var(--text)}
+.wrap{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:120px 40px 80px}
+.page-tag{display:inline-block;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--purple);font-weight:600;margin-bottom:16px}
+.page-title{font-family:'Syne',sans-serif;font-size:48px;font-weight:800;letter-spacing:-0.02em;margin-bottom:12px}
+.page-title span{background:linear-gradient(90deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.page-date{font-size:13px;color:var(--muted);margin-bottom:56px}
+.summary-box{background:rgba(74,222,128,0.06);border:0.5px solid rgba(74,222,128,0.25);border-radius:16px;padding:24px 28px;margin-bottom:56px}
+.summary-box p{font-size:15px;color:#86efac;line-height:1.7;font-weight:500}
+h2{font-family:'Syne',sans-serif;font-size:20px;font-weight:700;color:var(--text);margin:48px 0 16px;padding-bottom:12px;border-bottom:0.5px solid var(--border)}
+h2:first-of-type{margin-top:0}
+p{font-size:14px;color:#9090b0;line-height:1.8;margin-bottom:14px}
+ul{margin:12px 0 20px 0;padding-left:0;list-style:none}
+ul li{font-size:14px;color:#9090b0;line-height:1.8;padding:6px 0 6px 20px;position:relative;border-bottom:0.5px solid rgba(255,255,255,0.04)}
+ul li:last-child{border-bottom:none}
+ul li::before{content:'→';position:absolute;left:0;color:var(--cyan);font-weight:600}
+strong{color:var(--text);font-weight:500}
+.highlight{background:rgba(108,99,255,0.08);border:0.5px solid rgba(108,99,255,0.2);border-radius:10px;padding:16px 20px;margin:20px 0}
+.highlight p{margin:0;color:#c0b8ff;font-size:13px}
+footer{position:relative;z-index:1;text-align:center;padding:40px;border-top:0.5px solid var(--border);font-size:12px;color:var(--muted)}
+footer a{color:var(--purple);text-decoration:none}
+@media(max-width:600px){.wrap{padding:100px 20px 60px}nav{padding:16px 20px}.page-title{font-size:36px}}
+</style>
+</head>
+<body>
+<div class="ambient"><div class="orb orb1"></div><div class="orb orb2"></div></div>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="nav-icon">🛡</div>
+    <span class="nav-name">OrionShield</span>
+  </a>
+  <a href="index.html" class="nav-back">← Back to home</a>
+</nav>
+
+<div class="wrap">
+  <div class="page-tag">Legal</div>
+  <h1 class="page-title">Privacy <span>Policy</span></h1>
+  <p class="page-date">Last updated: April 2026 · Applies to OrionShield v1.0.0 and later</p>
+
+  <div class="summary-box">
+    <p>The short version: OrionShield does not collect, transmit, store, or share any personal data. Everything runs on your device. Nothing leaves your hands.</p>
+  </div>
+
+  <h2>1. What OrionShield Does Not Do</h2>
+  <p>OrionShield contains no analytics SDK, no advertising framework, no crash reporting service, and no telemetry pipeline. It does not create accounts, require sign-in, or communicate with any proprietary backend server operated by the developer.</p>
+  <ul>
+    <li>No personal data is collected</li>
+    <li>No scan results are uploaded</li>
+    <li>No device identifiers are transmitted</li>
+    <li>No usage patterns are tracked</li>
+    <li>No ads are shown</li>
+  </ul>
+
+  <h2>2. On-Device Processing</h2>
+  <p>All of OrionShield's core functions run entirely on your device:</p>
+  <ul>
+    <li><strong>Threat scanning</strong> — launch agent and process analysis runs locally via FileManager and Security.framework</li>
+    <li><strong>Privacy checks</strong> — permission status is read directly from system APIs on your device</li>
+    <li><strong>Clipboard monitoring</strong> — pattern detection reads NSPasteboard locally and never writes content to disk or network</li>
+    <li><strong>AI summaries</strong> — generated by the on-device language model; no prompts or responses are sent to external servers</li>
+    <li><strong>Network visibility</strong> — interface enumeration via getifaddrs runs locally</li>
+  </ul>
+
+  <h2>3. Clipboard Monitoring</h2>
+  <p>Clipboard Guardian is <strong>disabled by default</strong>. It only activates after you explicitly enable it in Settings.</p>
+  <p>When enabled, OrionShield reads your clipboard periodically to check for sensitive-looking patterns such as card numbers, private keys, and recovery phrases. This analysis happens in memory only. Clipboard contents are:</p>
+  <ul>
+    <li>Never stored to disk</li>
+    <li>Never transmitted off your device</li>
+    <li>Never logged or retained after the check completes</li>
+    <li>Optionally auto-cleared after a configurable interval you control</li>
+  </ul>
+
+  <h2>4. Locally Stored Preferences</h2>
+  <p>OrionShield stores the following in your device's local preferences (UserDefaults). None of this data is synced, uploaded, or accessible to the developer:</p>
+  <ul>
+    <li>Clipboard monitoring enabled/disabled preference</li>
+    <li>Auto-clear interval preference</li>
+    <li>Launch at login preference</li>
+    <li>Email addresses you add to the Exposure Guide (stored locally, not uploaded)</li>
+  </ul>
+
+  <div class="highlight">
+    <p>Email addresses added to the Exposure Guide are stored only in your device's local preferences. They are not sent to any server, not used for any purpose other than local display, and can be deleted at any time from within the app.</p>
+  </div>
+
+  <h2>5. On-Device AI</h2>
+  <p>OrionShield uses the on-device language model when available on your system. When it is unavailable, the app falls back to deterministic rule-based summaries automatically.</p>
+  <p>In both cases, no AI input or output is transmitted to any external server. The developer has no visibility into what questions you ask the AI Assistant or what summaries are generated.</p>
+
+  <h2>6. Network Entitlement</h2>
+  <p>OrionShield declares the <strong>network client entitlement</strong> for a planned future integration with the HaveIBeenPwned k-anonymity API (exposure checking). In the current version (v1.0.0), no live network requests are made by default. If a future version adds this capability, this policy will be updated and the feature will be clearly disclosed and opt-in.</p>
+
+  <h2>7. App Sandbox</h2>
+  <p>OrionShield runs inside the system App Sandbox. This technically limits what the app can access on your system — and that limitation is intentional. The sandbox means OrionShield cannot access arbitrary files, system databases, or other apps' private data without explicit permission grants from you.</p>
+
+  <h2>8. Children's Privacy</h2>
+  <p>OrionShield does not knowingly collect any data from anyone, including children under 13. The app collects no personal information whatsoever.</p>
+
+  <h2>9. Changes to This Policy</h2>
+  <p>If the privacy practices of OrionShield change materially — for example if a future version adds an opt-in network feature — this policy will be updated with a new date and the change will be described clearly. The latest version is always available at this URL.</p>
+
+  <h2>10. Contact</h2>
+  <p>Questions about this privacy policy or OrionShield's data practices:</p>
+  <p><a href="mailto:mrinalsinghraja@gmail.com" style="color:var(--cyan);text-decoration:none;font-weight:500">mrinalsinghraja@gmail.com</a></p>
+  <p style="margin-top:8px;font-size:13px">Developer: Mrinal Singh Raja · Part of the Orion Suite</p>
+</div>
+
+<footer>
+  <p>© 2026 Mrinal Singh Raja · <a href="index.html">OrionShield</a> · <a href="https://mrinalsinghraja.github.io/orionclean">OrionClean</a> · <a href="https://mrinalsinghraja.github.io/orionmonitor">Orion Monitor</a></p>
+</footer>
+</body>
+</html>
