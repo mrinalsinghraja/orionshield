@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OrionShield — MSRX</title>
-  <meta name="description" content="Security & Privacy Review for macOS. Privacy audit, malware detection, and network guard.">
+  <title>MSRX Shield — MSRX</title>
+  <meta name="description" content="A security review for macOS that tells you what it could not see. Runs entirely on your computer. No network access of any kind.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -48,6 +48,11 @@
     .footer-right a { font-size: 13px; color: var(--text3); text-decoration: none; transition: color 0.15s; }
     .footer-right a:hover { color: var(--text2); }
     @media (max-width: 600px) { .hero { padding: 48px 16px 40px; } .features { padding: 40px 16px; } footer { flex-direction: column; align-items: flex-start; } }
+    .limits { max-width: 1100px; margin: 0 auto; padding: 0 24px 60px; }
+    .limits-card { background: var(--surface); border-radius: 20px; padding: 32px; border: 1px solid var(--border); }
+    .limits-card h3 { font-size: 16px; font-weight: 600; margin-bottom: 16px; }
+    .limits-card p { font-size: 14px; color: var(--text2); line-height: 1.7; margin-bottom: 12px; }
+    .limits-card p:last-child { margin-bottom: 0; }
   </style>
 </head>
 <body>
@@ -62,40 +67,74 @@
       </a>
       <nav class="nav-links">
         <a href="https://msrx.co.in/#apps">All Apps</a>
-        <a href="mailto:mrinalsinghraja@gmail.com">Contact</a>
+        <a href="mailto:mrinalsinghraja@gmail.com">Support</a>
         <a href="privacy.html">Privacy</a>
       </nav>
     </div>
   </nav>
+
   <section class="hero">
-    <div class="app-icon"><span class="app-icon-initials">OS</span></div>
-    <p class="eyebrow">macOS · MSRX</p>
-    <h1>OrionShield<br><span>Security & Privacy Review</span></h1>
-    <p>Comprehensive security and privacy protection for your Mac. Audit app permissions, detect threats, guard your network, and keep your digital life private.</p>
+    <div class="app-icon"><span class="app-icon-initials">MS</span></div>
+    <p class="eyebrow">macOS &middot; MSRX</p>
+    <h1>MSRX Shield<br><span>See what runs at sign-in</span></h1>
+    <p>A security review that tells you what it could not see. Every finding names the evidence behind it, the score only counts what was actually measured, and nothing ever leaves your computer.</p>
     <div class="cta-row">
       <a href="https://apps.apple.com/us/app/orionshield/id6764576967?mt=12" class="btn-primary">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-        Download on Mac App Store
+        Download on the Mac App Store
       </a>
-      <a href="https://msrx.co.in" class="btn-secondary">More MSRX Apps →</a>
+      <a href="https://msrx.co.in" class="btn-secondary">More MSRX Apps &rarr;</a>
     </div>
+    <p style="font-size:13px;color:var(--text3);margin-top:24px">Previously released as OrionShield. Same app, new name.</p>
   </section>
+
   <div class="divider"><hr></div>
+
   <section class="features">
-    <p class="section-title">Key Features</p>
+    <p class="section-title">What it looks at</p>
     <div class="features-grid">
-      <div class="feature-card"><div class="feature-icon">🔎</div><h3>Privacy Audit</h3><p>Scan which apps have access to your camera, microphone, location, and contacts — and revoke what you don't need.</p></div>
-      <div class="feature-card"><div class="feature-icon">🦠</div><h3>Malware Detection</h3><p>Identifies suspicious files, scripts, and processes that could compromise your Mac's security.</p></div>
-      <div class="feature-card"><div class="feature-icon">🔐</div><h3>Permission Manager</h3><p>A clear view of every permission granted on your system, with one-tap controls to tighten your privacy.</p></div>
-      <div class="feature-card"><div class="feature-icon">🌐</div><h3>Network Guard</h3><p>Monitor outbound connections and block apps from phoning home without your knowledge.</p></div>
+      <div class="feature-card"><div class="feature-icon">&#9711;</div><h3>Startup items</h3><p>The programs that ask to run when you sign in, with the signature on each one read and reported. One whose signature could not be read is reported as unreadable, never as unsigned &mdash; those are different facts.</p></div>
+      <div class="feature-card"><div class="feature-icon">&#9635;</div><h3>Protections</h3><p>Thirteen questions about what is already built into your computer. Three are answered from inside the sandbox, six more if you hand the app one named file, and four cannot be answered on any terms &mdash; those say so, with the reason and where to look yourself.</p></div>
+      <div class="feature-card"><div class="feature-icon">&#9633;</div><h3>Findings and Timeline</h3><p>Warning signs in the places the app can reach, ranked by how strong the evidence is &mdash; and what appeared, went away or stayed since your last review. Every review is kept and compared, not replaced.</p></div>
+      <div class="feature-card"><div class="feature-icon">&#9670;</div><h3>Applications</h3><p>Everything in the shared applications folder with the developer team that signed it. The ones carrying no signature, or one identifying nobody, are listed first.</p></div>
+      <div class="feature-card"><div class="feature-icon">&#9678;</div><h3>Clipboard</h3><p>Off until you turn it on. When on, it checks what you copy for card numbers, keys and passwords worth not leaving lying around. Nothing copied is stored or sent.</p></div>
+      <div class="feature-card"><div class="feature-icon">&#10022;</div><h3>An assistant that runs here</h3><p>Summaries of your review are written on your own computer, and you can ask questions in your own words. Nothing you type is saved or sent. Every sentence is labelled with which system wrote it.</p></div>
     </div>
   </section>
+
   <div class="divider"><hr></div>
+
+  <section class="limits">
+    <p class="section-title">What it will not do</p>
+    <div class="limits-card">
+      <h3>It will not tell you it scanned your whole computer.</h3>
+      <p>It runs in a sandbox and most of the disk is out of reach, so every screen states what it could and could not see. An unanswered question you know how to answer yourself is worth more than a green tick you cannot check.</p>
+      <h3>It will not invent a number.</h3>
+      <p>The score starts at 100 and only loses points for things that were actually observed. The arithmetic is printed underneath it &mdash; every deduction with its count and its cost &mdash; so the number can be added up by hand.</p>
+      <h3>It will not call anything malicious.</h3>
+      <p>This app reports signals, never verdicts. A signature says who took responsibility for a program, not whether the program is good, and a review of this kind cannot support a claim that your computer is secure or that it is not.</p>
+      <h3>It will not raise its voice.</h3>
+      <p>No red banner, no countdown, no urgency. A tool that shouts trains you to stop listening.</p>
+    </div>
+  </section>
+
+  <div class="divider"><hr></div>
+
+  <section class="limits">
+    <p class="section-title">Nothing leaves your computer</p>
+    <div class="limits-card">
+      <p>There is no networking code in this app at all. No analytics, no crash reporter, no account, no upload. That is a fact about the binary rather than a promise in a policy &mdash; the App Store privacy label reads Data Not Collected because there is nothing there to collect with.</p>
+      <p>Read the full <a href="privacy.html" style="color:#8b5cf6;text-decoration:none;font-weight:500">privacy policy</a>, or write to <a href="mailto:mrinalsinghraja@gmail.com" style="color:#8b5cf6;text-decoration:none;font-weight:500">mrinalsinghraja@gmail.com</a> for support.</p>
+    </div>
+  </section>
+
+  <div class="divider"><hr></div>
+
   <footer>
-    <p class="footer-left">© 2025 MSRX. All rights reserved.</p>
+    <p class="footer-left">&copy; 2026 MSRX &middot; Mrinal Singh Raja</p>
     <div class="footer-right">
       <a href="privacy.html">Privacy Policy</a>
-      <a href="mailto:mrinalsinghraja@gmail.com">Contact</a>
+      <a href="mailto:mrinalsinghraja@gmail.com">Support</a>
       <a href="https://msrx.co.in">msrx.co.in</a>
     </div>
   </footer>

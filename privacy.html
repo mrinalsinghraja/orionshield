@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OrionShield Privacy Policy — MSRX</title>
+  <title>MSRX Shield Privacy Policy — MSRX</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -30,6 +30,9 @@
     footer { max-width: 800px; margin: 0 auto; padding: 24px 24px 40px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
     footer span, footer a { font-size: 13px; color: var(--text3); text-decoration: none; }
     footer a:hover { color: var(--text2); }
+    .callout { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px 24px; margin: 24px 0; }
+    .callout p:last-child { margin-bottom: 0; }
+    strong { color: var(--text); font-weight: 600; }
   </style>
 </head>
 <body>
@@ -39,44 +42,82 @@
         <svg viewBox="0 0 100 120" fill="none"><defs><linearGradient id="g" x1="0" y1="0" x2="100" y2="120" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#00c4df"/><stop offset="100%" stop-color="#8b5cf6"/></linearGradient></defs><path d="M6 110 L6 12 L50 62 L94 12 L94 110 L76 110 L76 46 L50 80 L24 46 L24 110 Z" fill="url(#g)"/></svg>
         <span>MSRX</span>
       </a>
-      <span class="nav-app">OrionShield</span>
+      <span class="nav-app">MSRX Shield</span>
     </div>
   </nav>
+
   <main>
     <p class="eyebrow">Legal</p>
     <h1>Privacy <span>Policy</span></h1>
-    <p class="subtitle">Effective Date: January 1, 2025 &nbsp;&middot;&nbsp; OrionShield</p>
-    <h2>Overview</h2>
-    <p>OrionShield is developed by Mrinal Singh Raja (MSRX). We take privacy seriously and are committed to protecting your personal information. This policy explains what data we collect, how we use it, and your rights.</p>
-    <h2>Information We Collect</h2>
-    <p>We collect only what is necessary to provide OrionShield's functionality:</p>
+    <p class="subtitle">MSRX Shield &nbsp;&middot;&nbsp; Effective 11 August 2026 &nbsp;&middot;&nbsp; Previously released as OrionShield</p>
+
+    <h2>The short version</h2>
+    <div class="callout">
+      <p><strong>No data is collected. None.</strong> There is no networking code in MSRX Shield at all &mdash; no analytics, no crash reporter, no account, no upload, no server to send anything to. The app ships without a network entitlement, so it could not make a request even if it tried to.</p>
+      <p>That is a fact about the binary rather than a promise in a policy, and it is why the App Store privacy label for this app reads <strong>Data Not Collected</strong>.</p>
+    </div>
+
+    <h2>What the app reads</h2>
+    <p>MSRX Shield reviews the parts of your computer a sandboxed application is allowed to read, and it tells you on every screen what it could not reach. That includes:</p>
     <ul>
-      <li>Usage data to improve app performance (anonymized)</li>
-      <li>Crash reports to fix bugs (no personal identification)</li>
-      <li>System security scan results (processed and displayed locally)</li>
+      <li>Startup records, and the code signature on each program named by one</li>
+      <li>The list of running applications, and the shared applications folder</li>
+      <li>The temporary folders it is permitted to open</li>
+      <li>Settings the system publishes about itself</li>
+      <li>Network interfaces &mdash; whether you are online and what is visible. <strong>No traffic is inspected, captured or blocked</strong>, and the app has no ability to do so</li>
+      <li>Its own authorisation status for camera, microphone and location, so the Privacy screen can display it. The app never requests access to those and never opens those devices</li>
     </ul>
-    <h2>Data Storage</h2>
-    <p>OrionShield processes all security scans on-device. We do not sell, rent, or share your personal information with third parties.</p>
-    <h2>Third-Party Services</h2>
-    <p>We may use the following third-party services:</p>
+    <p>All of it is examined on your computer and displayed to you. None of it is transmitted, because there is nothing in the app that transmits.</p>
+
+    <h2>What the app stores, and where</h2>
     <ul>
-      <li><strong>Apple App Store</strong> — for app distribution and purchases</li>
+      <li><strong>Your reviews</strong> &mdash; kept inside the app&rsquo;s own container on your computer so a later review can be compared against an earlier one. You can clear them from Settings.</li>
+      <li><strong>Your settings and checklist marks</strong> &mdash; the same container.</li>
+      <li><strong>Assistant conversations</strong> &mdash; held in memory only. They are never written to disk, never added to the review log, and never included in an exported report. Quitting the app forgets them.</li>
+      <li><strong>Clipboard contents</strong> &mdash; never stored. Clipboard checking is off until you switch it on, and when on it examines text and reports the kind of thing it matched. The text itself is not recorded, not included in reviews, and not written to an exported report.</li>
     </ul>
-    <h2>Children's Privacy</h2>
-    <p>Our apps are not directed to children under 13. We do not knowingly collect personal information from children.</p>
-    <h2>Changes to This Policy</h2>
-    <p>We may update this privacy policy. We will notify you of significant changes by updating the Effective Date above.</p>
+
+    <h2>Files you choose to give it</h2>
+    <p>Six of the questions on the Protections screen are answered by two files a sandboxed app is refused by default. The app can ask for one at a time, through the standard open panel, and only when you press the button:</p>
+    <ul>
+      <li>It names the exact file before you choose, and reads nothing else</li>
+      <li>The file is read, never written</li>
+      <li>A different file picked by mistake is refused rather than quietly accepted</li>
+      <li>The access ends when you quit &mdash; nothing is remembered between launches, and the app holds no bookmark that could reopen the file later</li>
+      <li>Declining costs you nothing; the screen works untouched and simply leaves those questions unanswered</li>
+    </ul>
+
+    <h2>On-device intelligence</h2>
+    <p>Written summaries and answers to your questions are produced by the on-device language model built into your computer. Nothing is sent to any service, ours or anyone else&rsquo;s.</p>
+    <p>The model is given conclusions the app has already reached &mdash; counts, states, and the summary line already printed on screen. It is never given a file path, a process identifier or anything from your clipboard. Every sentence it writes is labelled so you can tell it apart from text the app composed itself.</p>
+
+    <h2>Exporting</h2>
+    <p>You can export a review, or the review log, to a location you choose. Nothing is written anywhere else, and nothing is uploaded. An exported review carries finding names, the paths they are about, and counts &mdash; never clipboard contents and never the contents of any file.</p>
+
+    <h2>Third parties</h2>
+    <p>There are none. MSRX Shield contains no third-party SDK, no advertising, no tracking and no analytics. The App Store handles distribution, and Apple&rsquo;s own privacy policy covers that transaction; we receive no personal information from it.</p>
+
+    <h2>Children</h2>
+    <p>MSRX Shield is not directed at children. It collects no personal information from anybody, of any age.</p>
+
+    <h2>Your rights</h2>
+    <p>Since no personal data is collected or held by us, there is nothing for us to disclose, correct, export or delete on your behalf. The data the app creates lives on your computer and is yours: clear it from Settings, or remove the app, and it is gone.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the effective date above changes with it, and the previous wording remains in this page&rsquo;s public revision history.</p>
+
     <div class="contact-box">
-      <p><strong>Questions about privacy?</strong></p>
-      <p>Contact us at <a href="mailto:mrinalsinghraja@gmail.com">mrinalsinghraja@gmail.com</a></p>
+      <p><strong>Questions, or support for the app?</strong></p>
+      <p>Write to <a href="mailto:mrinalsinghraja@gmail.com">mrinalsinghraja@gmail.com</a></p>
       <p>More apps: <a href="https://msrx.co.in">msrx.co.in</a></p>
     </div>
   </main>
+
   <footer>
-    <span>&copy; 2025 MSRX &middot; Mrinal Singh Raja</span>
+    <span>&copy; 2026 MSRX &middot; Mrinal Singh Raja</span>
     <div style="display:flex;gap:20px">
-      <a href="index.html">OrionShield</a>
-      <a href="mailto:mrinalsinghraja@gmail.com">Contact</a>
+      <a href="index.html">MSRX Shield</a>
+      <a href="mailto:mrinalsinghraja@gmail.com">Support</a>
       <a href="https://msrx.co.in">msrx.co.in</a>
     </div>
   </footer>
